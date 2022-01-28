@@ -7,10 +7,15 @@
 
 * {
   box-sizing: border-box;
+  font-family: Muli;
 }
 
 body {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .container {
@@ -18,11 +23,13 @@ body {
 }
 
 .progress-container {
+  display: flex;
   justify-content: space-between;
   position: relative;
   margin-bottom: 30px;
   max-width: 100%;
   width: 350px;
+  align-items: center;
 }
 
 .progress-container::before {
@@ -52,6 +59,13 @@ body {
 .circle {
   border: 3px solid var(--line-border-empty);
   transition: 0.4s ease;
+  border-radius: 50%;
+  width: 30px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
 }
 
 .circle.active {
